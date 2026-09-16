@@ -1,40 +1,15 @@
 #include <iostream>
 using namespace std;
 
-// Inline function
-inline int square(int x) {
-    return x * x;
-}
-
-// Default argument
-int add(int a, int b = 10) {
-    return a + b;
-}
-
-// Function overloading
-int multiply(int a, int b) {
-    return a * b;
-}
-
-float multiply(float a, float b) {
-    return a * b;
+inline int add(int a, int b) {
+    int c = a + b;
+    return c;
 }
 
 int main() {
-
-    cout << "Square of 5: " << square(5) << endl;
-
-    cout << "Addition of 10 and 20: "
-         << add(10, 20) << endl;
-
-    cout << "Addition using default argument: "
-         << add(10) << endl;
-
-    cout << "Integer Multiplication: "
-         << multiply(5, 4) << endl;
-
-    cout << "Float Multiplication: "
-         << multiply(2.5f, 4.0f) << endl;
-
+    int d = 10;
+    int e = 20;
+    cout <<"The sum of d and e : "<< add(d, e) << endl;
+    cout <<"The sum of 30 and 40 : "<< add(30, 40) << endl;
     return 0;
 }
